@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c
+stdio.h
+-
+stdlib.h
+-
+linkedList.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/main.c
+stdio.h
+-
+linkedList.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+

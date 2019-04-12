@@ -123,6 +123,33 @@ TP1_Estrutura_de_Dados/fast:
 	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/build
 .PHONY : TP1_Estrutura_de_Dados/fast
 
+linkedList.o: linkedList.c.o
+
+.PHONY : linkedList.o
+
+# target to build an object file
+linkedList.c.o:
+	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o
+.PHONY : linkedList.c.o
+
+linkedList.i: linkedList.c.i
+
+.PHONY : linkedList.i
+
+# target to preprocess a source file
+linkedList.c.i:
+	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.i
+.PHONY : linkedList.c.i
+
+linkedList.s: linkedList.c.s
+
+.PHONY : linkedList.s
+
+# target to generate assembly for a file
+linkedList.c.s:
+	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.s
+.PHONY : linkedList.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TP1_Estrutura_de_Dados"
 	@echo "... edit_cache"
+	@echo "... linkedList.o"
+	@echo "... linkedList.i"
+	@echo "... linkedList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
