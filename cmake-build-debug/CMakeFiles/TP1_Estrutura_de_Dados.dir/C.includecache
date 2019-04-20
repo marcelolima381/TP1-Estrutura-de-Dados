@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c
+/home/marcelo/Projects/TP1 Estrutura de Dados/course.c
 stdio.h
 -
 stdlib.h
 -
+string.h
+-
+course.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
 linkedList.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
 
@@ -19,6 +25,12 @@ linkedList.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/main.c
 stdio.h
 -
+stdlib.h
+-
+string.h
+-
 linkedList.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+course.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
 

@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/course.c">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/course.h">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
 		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>

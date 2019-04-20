@@ -1,17 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "linkedList.h"
+#include "course.h"
+
+
 
 int main() {
-	Node* head = NULL;
+	int numberOfCourses;
+	int numberOfStudents;
 
-	insertAtBeginning(&head, 7);
-	insertAtBeginning(&head, 1);
-	insertAtBeginning(&head, 4);
-	insertBeforeNode(&head, head->next, 8);
-
-	printf("Created DLL is: ");
-	printList(head);
+	scanf("%i %i", &numberOfCourses, &numberOfStudents);
 	getchar();
+
+	Course *courses = (Course *) malloc (numberOfCourses * sizeof(Course));
+	registerCourses(numberOfCourses, courses);
 
 	return 0;
 }

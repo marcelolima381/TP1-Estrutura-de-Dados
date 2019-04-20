@@ -1,4 +1,4 @@
-/snap/clion/67/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/marcelo/Projects/TP1 Estrutura de Dados"
+/snap/clion/69/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/marcelo/Projects/TP1 Estrutura de Dados"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug

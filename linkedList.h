@@ -12,10 +12,10 @@ struct node {
 	Node *previous;
 };
 
-void insertAtBeginning(Node **head_ref, int new_data);
-void insertAfterNode(Node *prev_node, int new_data);
-void insertAtEnd(Node **head_ref, int new_data);
-void insertBeforeNode(Node **head_ref, Node *next_node, int new_data);
+void insertAtBeginning(Node **headRef, int newData);
+void insertAfterNode(Node *prevNode, int newData);
+void insertAtEnd(Node **headRef, int newData);
+void insertBeforeNode(Node **headRef, Node *nextNode, int newData);
 void printList(Node *node);
 
 #endif //TP1_ESTRUTURA_DE_DADOS_LINKEDLIST_H
