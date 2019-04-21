@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o  -o TP1_Estrutura_de_Dados 
+/usr/bin/cc -g   CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o  -o TP1_Estrutura_de_Dados 

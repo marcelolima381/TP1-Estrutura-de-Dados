@@ -5,17 +5,18 @@
 #ifndef TP1_ESTRUTURA_DE_DADOS_LINKEDLIST_H
 #define TP1_ESTRUTURA_DE_DADOS_LINKEDLIST_H
 
+#include "student.h"
 typedef struct node Node;
 struct node {
-	int data;
+	Student *student;
 	Node *next;
 	Node *previous;
 };
 
-void insertAtBeginning(Node **headRef, int newData);
-void insertAfterNode(Node *prevNode, int newData);
-void insertAtEnd(Node **headRef, int newData);
-void insertBeforeNode(Node **headRef, Node *nextNode, int newData);
+void insertAtBeginning(Node **headRef, Student *newStudent);
+void insertAfterNode(Node *prevNode, Student *newStudent);
+void insertAtEnd(Node **headRef, Student *newStudent);
+void insertBeforeNode(Node **headRef, Node *nextNode, Student *newStudent);
 void printList(Node *node);
 
 #endif //TP1_ESTRUTURA_DE_DADOS_LINKEDLIST_H

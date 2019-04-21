@@ -93,6 +93,18 @@
 		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/main.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/student.c">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/student.h">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
 		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

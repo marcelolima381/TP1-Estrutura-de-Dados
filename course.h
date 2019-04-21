@@ -4,9 +4,7 @@
 
 #ifndef TP1_ESTRUTURA_DE_DADOS_COURSE_H
 #define TP1_ESTRUTURA_DE_DADOS_COURSE_H
-#ifndef INITIAL_SIZE
-#define INITIAL_SIZE 2
-#endif
+
 #include "linkedList.h"
 
 typedef struct course Course;
@@ -14,9 +12,9 @@ struct course {
 	char *name;
 	int numberOfVacancies;
 	Node *vacancies;
+	Node *waitingList;
 };
 
-void removeLastChar(char *str);
 char* readDynamicString();
 char* setCourseName();
 int setNumberOfVacancies();

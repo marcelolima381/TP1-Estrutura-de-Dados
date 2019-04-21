@@ -6,29 +6,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "course.h"
-
-void removeLastChar(char *str) {
-	str[strlen(str)-1] = '\0';
-}
-
-char* readDynamicString() {
-	char *str;
-	int strLength = 0;
-	str = (char *) malloc (INITIAL_SIZE * sizeof(char));
-
-	while ((str[strLength] = getchar()) != '\n') {
-		strLength++;
-		str = (char *) realloc (str, INITIAL_SIZE + strLength);
-	}
-
-	return str;
-}
+#include "utils.h"
 
 char* setCourseName() {
 	char *name;
 
 	name = readDynamicString();
-	removeLastChar(name);
+//	removeLastChar(name);
 
 	return name;
 }

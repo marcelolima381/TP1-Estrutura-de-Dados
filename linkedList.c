@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include "linkedList.h"
 
-void insertAtBeginning(Node **headRef, int newData) {
+void insertAtBeginning(Node **headRef, Student *newStudent) {
 	Node *newNode = (Node *) malloc(sizeof(Node));
-	newNode->data = newData;
+	newNode->student = newStudent;
 	newNode->next = (*headRef);
 	newNode->previous = NULL;
 	if ((*headRef) != NULL)
@@ -16,14 +16,14 @@ void insertAtBeginning(Node **headRef, int newData) {
 	(*headRef) = newNode;
 }
 
-void insertAfterNode(Node *previousNode, int newData) {
+void insertAfterNode(Node *previousNode, Student *newStudent) {
 	if (previousNode == NULL) {
 		printf("the given previous node cannot be NULL");
 		return;
 	}
 
 	Node *newNode = (Node *) malloc(sizeof(Node));
-	newNode->data = newData;
+	newNode->student = newStudent;
 	newNode->next = previousNode->next;
 	previousNode->next = newNode;
 	newNode->previous = previousNode;
@@ -31,10 +31,10 @@ void insertAfterNode(Node *previousNode, int newData) {
 		newNode->next->previous = newNode;
 }
 
-void insertAtEnd(Node **headRef, int newData) {
+void insertAtEnd(Node **headRef, Student *newStudent) {
 	Node *newNode = (Node *) malloc(sizeof(Node));
 	Node *last = *headRef;
-	newNode->data = newData;
+	newNode->student = newStudent;
 	newNode->next = NULL;
 	if (*headRef == NULL) {
 		newNode->previous = NULL;
@@ -47,14 +47,14 @@ void insertAtEnd(Node **headRef, int newData) {
 	newNode->previous = last;
 }
 
-void insertBeforeNode(Node **headRef, Node *nextNode, int newData) {
+void insertBeforeNode(Node **headRef, Node *nextNode, Student *newStudent) {
 	if (nextNode == NULL) {
 		printf("the given next node cannot be NULL");
 		return;
 	}
 
 	Node *newNode = (Node *) malloc(sizeof(Node));
-	newNode->data = newData;
+	newNode->student = newStudent;
 	newNode->previous = nextNode->previous;
 	nextNode->previous = newNode;
 	newNode->next = nextNode;
@@ -66,17 +66,17 @@ void insertBeforeNode(Node **headRef, Node *nextNode, int newData) {
 }
 
 void printList(Node *node) {
-	Node *last;
+	Node *last = NULL;
 	printf("\nTraversal in forward direction \n");
 	while (node != NULL) {
-		printf(" %d ", node->data);
+		printf("Nome: %s\n | Primeira opcao: %i\n | Segunda opcao: %i\n\n", node->student->name, node->student->firstOption, node->student->secondOption);
 		last = node;
 		node = node->next;
 	}
 
-	printf("\nTraversal in reverse direction \n");
+	/*printf("\nTraversal in reverse direction \n");
 	while (last != NULL) {
-		printf(" %d ", last->data);
+		printf("Nome: %s\n | Primeira opcao: %i\n | Segunda opcao: %i\n\n", last->student->name, last->student->firstOption, last->student->secondOption);
 		last = last->previous;
-	}
+	}*/
 }  

@@ -6,21 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-course.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-
 /home/marcelo/Projects/TP1 Estrutura de Dados/course.h
 linkedList.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
 
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+student.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
 
 /home/marcelo/Projects/TP1 Estrutura de Dados/main.c
 stdio.h
@@ -33,4 +25,22 @@ linkedList.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
 course.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/course.h
+student.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/student.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+student.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
+utils.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
 
