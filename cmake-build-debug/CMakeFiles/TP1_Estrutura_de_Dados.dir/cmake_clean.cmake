@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o"
   "CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o"
   "CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o"
+  "CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o"
   "TP1_Estrutura_de_Dados.pdb"
   "TP1_Estrutura_de_Dados"
 )

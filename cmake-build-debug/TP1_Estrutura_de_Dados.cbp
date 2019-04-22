@@ -93,6 +93,12 @@
 		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/main.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
+		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h">
+			<Option target="TP1_Estrutura_de_Dados"/>
+		</Unit>
 		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/student.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>

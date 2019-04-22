@@ -23,7 +23,6 @@ void registerStudents(int numberOfStudents, Student *students) {
 	for (i = 0; i < numberOfStudents; i++) {
 		Student *student = setStudent();
 		students[i] = *student;
-		free(student);
 //		printf("Nome: %s | Nota: %.2f | 1a opcao: %i | 2a opcao: %i\n", students[i].name, students[i].score, students[i].firstOption, students[i].secondOption);
 	}
 }

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/marcelo/Projects/TP1 Estrutura de Dados/course.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o"
   "/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o"
   "/home/marcelo/Projects/TP1 Estrutura de Dados/main.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o"
   "/home/marcelo/Projects/TP1 Estrutura de Dados/student.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o"
   "/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o"
   )

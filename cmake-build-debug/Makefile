@@ -204,6 +204,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.s
 .PHONY : main.c.s
 
+sisu.o: sisu.c.o
+
+.PHONY : sisu.o
+
+# target to build an object file
+sisu.c.o:
+	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o
+.PHONY : sisu.c.o
+
+sisu.i: sisu.c.i
+
+.PHONY : sisu.i
+
+# target to preprocess a source file
+sisu.c.i:
+	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.i
+.PHONY : sisu.c.i
+
+sisu.s: sisu.c.s
+
+.PHONY : sisu.s
+
+# target to generate assembly for a file
+sisu.c.s:
+	$(MAKE) -f CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.s
+.PHONY : sisu.c.s
+
 student.o: student.c.o
 
 .PHONY : student.o
@@ -276,6 +303,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sisu.o"
+	@echo "... sisu.i"
+	@echo "... sisu.s"
 	@echo "... student.o"
 	@echo "... student.i"
 	@echo "... student.s"
