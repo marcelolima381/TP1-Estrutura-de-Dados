@@ -14,6 +14,22 @@ linkedList.h
 student.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/student.h
 
+/home/marcelo/Projects/TP1 Estrutura de Dados/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+linkedList.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+course.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
+student.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
+sisu.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
+
 /home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c
 stdio.h
 -

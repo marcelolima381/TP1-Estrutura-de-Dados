@@ -67,9 +67,12 @@ void insertBeforeNode(Node **headRef, Node *nextNode, Student *newStudent) {
 
 void printList(Node *node) {
 	Node *last = NULL;
-	printf("\nTraversal in forward direction \n");
+//	printf("\nTraversal in forward direction \n");
+	if (node == NULL) {
+		printf("NODE NULO!\n");
+	}
 	while (node != NULL) {
-		printf("Nome: %s\n | Primeira opcao: %i\n | Segunda opcao: %i\n\n", node->student->name, node->student->firstOption, node->student->secondOption);
+		printf("Nome: %s\n | Primeira opcao: %i\n | Segunda opcao: %i\n | Nota: %.2f\n\n", node->student->name, node->student->firstOption, node->student->secondOption, node->student->score);
 		last = node;
 		node = node->next;
 	}

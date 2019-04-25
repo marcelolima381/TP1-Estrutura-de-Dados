@@ -24,6 +24,7 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 		Node *node = courses[firstOption].vacancies;
 		Node *last = NULL;
 		int size = 0;
+
 //		Pega tamanho da lista de aprovados no curso
 		while (node != NULL) {
 			size++;
@@ -54,8 +55,30 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 				node = courses[firstOption].vacancies;
 				while (node != NULL) {
 					if (node->student->score < score) {
-						printf("Dados da cabeça: %s %.2f\n", node->student->name, node->student->score);
-						insertBeforeNode(&node, node, &students[i]);
+//						printf("Node: %s\n", node->student->name);
+//						Node *temp = node;
+						if (node->previous != NULL) {
+//							insertBeforeNode(&node, node->next, &students[i]);
+							Node *newNode = (Node *) malloc (sizeof(Node));
+							Node *prev = (Node *) malloc (sizeof(Node));
+							newNode->student = &students[i];
+							Node *temp = node;
+							prev = node->previous;
+							node = newNode;
+							node->next = temp;
+							node->previous = prev;
+							node->previous->next = node;
+							node->next->previous = node;
+
+						} else {
+							Node *newNode = (Node *) malloc (sizeof(Node));
+							newNode->student = &students[i];
+							Node *temp = node;
+							node = newNode;
+							node->next = temp;
+							node->next->previous = node;
+						}
+						courses[firstOption].vacancies = node;
 						break;
 					} else if (node->student->score > score && node->next == NULL) {
 						insertAtEnd(&courses[firstOption].vacancies, &students[i]);
@@ -69,6 +92,12 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 		} else {
 			insertAtBeginning(&courses[firstOption].vacancies, &students[i]);
 		}
+
+		while (courses[firstOption].vacancies->previous != NULL) {
+			last = courses[firstOption].vacancies;
+			courses[firstOption].vacancies = courses[firstOption].vacancies->previous;
+		}
+
 	}
 
 	printList(courses[0].vacancies);
