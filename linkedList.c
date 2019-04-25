@@ -47,27 +47,30 @@ void insertAtEnd(Node **headRef, Student *newStudent) {
 	newNode->previous = last;
 }
 
-void insertBeforeNode(Node **headRef, Node *nextNode, Student *newStudent) {
-	if (nextNode == NULL) {
-		printf("the given next node cannot be NULL");
-		return;
-	}
+void insertBeforeNode(Node *node, Student *newStudent) {
+    Node *newNode = (Node *) malloc (sizeof(Node));
+    newNode->student = newStudent;
+    Node *temp = node;
+    node = newNode;
+    node->next = temp;
+    node->next->previous = node;
+}
 
-	Node *newNode = (Node *) malloc(sizeof(Node));
-	newNode->student = newStudent;
-	newNode->previous = nextNode->previous;
-	nextNode->previous = newNode;
-	newNode->next = nextNode;
-	if (newNode->previous != NULL)
-		newNode->previous->next = newNode;
-	else
-		(*headRef) = newNode;
-
+void insertBeforePreviousNull(Node *node, Student *newStudent) {
+    Node *newNode = (Node *) malloc (sizeof(Node));
+    Node *prev;
+    newNode->student = newStudent;
+    Node *temp = node;
+    prev = node->previous;
+    node = newNode;
+    node->next = temp;
+    node->previous = prev;
+    node->previous->next = node;
+    node->next->previous = node;
 }
 
 void printList(Node *node) {
 	Node *last = NULL;
-//	printf("\nTraversal in forward direction \n");
 	if (node == NULL) {
 		printf("NODE NULO!\n");
 	}
@@ -77,8 +80,7 @@ void printList(Node *node) {
 		node = node->next;
 	}
 
-	/*printf("\nTraversal in reverse direction \n");
-	while (last != NULL) {
+	/*while (last != NULL) {
 		printf("Nome: %s\n | Primeira opcao: %i\n | Segunda opcao: %i\n\n", last->student->name, last->student->firstOption, last->student->secondOption);
 		last = last->previous;
 	}*/

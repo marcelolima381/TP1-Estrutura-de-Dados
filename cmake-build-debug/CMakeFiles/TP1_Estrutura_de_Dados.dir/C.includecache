@@ -6,49 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-linkedList.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
-student.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/main.c
+/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.c
 stdio.h
 -
 stdlib.h
 -
-string.h
--
 linkedList.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
-course.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-student.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
-sisu.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
+/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.h
 
-/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-sisu.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
-course.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
+/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.h
 student.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
+/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.h
 
-/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
-student.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
-course.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
+/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.h
 

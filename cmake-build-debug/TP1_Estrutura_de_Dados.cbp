@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug"/>
+				<Option working_dir="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug"/>
+				<Option working_dir="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TP1_Estrutura_de_Dados">
-				<Option output="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/TP1_Estrutura_de_Dados" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug"/>
+				<Option output="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/TP1_Estrutura_de_Dados" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -41,15 +41,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1_Estrutura_de_Dados"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1_Estrutura_de_Dados"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TP1_Estrutura_de_Dados/fast">
-				<Option output="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/TP1_Estrutura_de_Dados" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug"/>
+				<Option output="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/TP1_Estrutura_de_Dados" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,57 +61,57 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1_Estrutura_de_Dados/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1_Estrutura_de_Dados/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug"/>
+				<Option working_dir="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelo/Projects/TP1\ Estrutura\ de\ Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/course.c">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/course.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/course.h">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/course.h">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.h">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/main.c">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/main.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/sisu.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/sisu.h">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/student.c">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/student.h">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.h">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/utils.c">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/utils.h">
 			<Option target="TP1_Estrutura_de_Dados"/>
 		</Unit>
-		<Unit filename="/home/marcelo/Projects/TP1 Estrutura de Dados/CMakeLists.txt">
+		<Unit filename="/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
