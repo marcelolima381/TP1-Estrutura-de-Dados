@@ -4,8 +4,6 @@
 
 #ifndef TP1_ESTRUTURA_DE_DADOS_SISU_H
 #define TP1_ESTRUTURA_DE_DADOS_SISU_H
-//#include "student.h"
-//#include "course.h"
 
 #include "datatype.h"
 

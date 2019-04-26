@@ -5,9 +5,8 @@
 #ifndef TP1_ESTRUTURA_DE_DADOS_COURSE_H
 #define TP1_ESTRUTURA_DE_DADOS_COURSE_H
 
-//#include "linkedList.h"
-
 #include "datatype.h"
+
 char* readDynamicString();
 char* setCourseName();
 int setNumberOfVacancies();

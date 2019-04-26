@@ -7,13 +7,10 @@
 #include <string.h>
 #include "datatype.h"
 #include "utils.h"
-//#include "student.h"
-//#include "utils.h"
 
 Student* setStudent() {
 	Student *student = (Student *) malloc (sizeof(Student));
 	student->name = readDynamicString();
-//	removeLastChar(student->name);
 	scanf("%f %i %i", &student->score, &student->firstOption, &student->secondOption);
 	getchar();
 
@@ -25,6 +22,5 @@ void registerStudents(int numberOfStudents, Student *students) {
 	for (i = 0; i < numberOfStudents; i++) {
 		Student *student = setStudent();
 		students[i] = *student;
-//		printf("Nome: %s | Nota: %.2f | 1a opcao: %i | 2a opcao: %i\n", students[i].name, students[i].score, students[i].firstOption, students[i].secondOption);
 	}
 }

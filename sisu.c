@@ -7,10 +7,6 @@
 #include <string.h>
 #include "datatype.h"
 #include "linkedList.h"
-//#include "sisu.h"
-//#include "linkedList.h"
-//#include "course.h"
-//#include "student.h"
 
 void secondOption() {
 	printf("segunda opcao\n");

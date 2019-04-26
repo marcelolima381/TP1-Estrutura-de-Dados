@@ -5,10 +5,6 @@
 #include "course.h"
 #include "student.h"
 #include "sisu.h"
-//#include "linkedList.h"
-//#include "course.h"
-//#include "student.h"
-//#include "sisu.h"
 
 int main() {
 	int numberOfCourses;

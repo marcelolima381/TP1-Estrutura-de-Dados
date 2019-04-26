@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "datatype.h"
-//#include "linkedList.h"
-//#include "course.h"
 
 void insertAtBeginning(Node **headRef, Student *newStudent) {
 	Node *newNode = (Node *) malloc(sizeof(Node));

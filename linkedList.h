@@ -5,10 +5,8 @@
 #ifndef TP1_ESTRUTURA_DE_DADOS_LINKEDLIST_H
 #define TP1_ESTRUTURA_DE_DADOS_LINKEDLIST_H
 
-//#include "student.h"
-//#include "course.h"
-
 #include "datatype.h"
+
 void insertAtBeginning(Node **headRef, Student *newStudent);
 void insertAfterNode(Node *prevNode, Student *newStudent);
 void insertAtEnd(Node **headRef, Student *newStudent);

@@ -13,7 +13,6 @@ char* setCourseName() {
 	char *name;
 
 	name = readDynamicString();
-//	removeLastChar(name);
 
 	return name;
 }

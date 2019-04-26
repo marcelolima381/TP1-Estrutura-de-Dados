@@ -7,7 +7,6 @@
 #include <string.h>
 #include <ctype.h>
 #include "utils.h"
-//#include "utils.h"
 
 char* readDynamicString() {
 	char *str;
@@ -19,7 +18,6 @@ char* readDynamicString() {
 		if (isalpha((unsigned char) c) || c == ' ') {
 			str[strLength] = c;
 			strLength++;
-//			printf("CHAR: %c | STRING: %s\n", c, str);
 			str = (char *) realloc (str, INITIAL_SIZE + strLength);
 		}
 	}
