@@ -4,7 +4,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "linkedList.h"
+#include "datatype.h"
+//#include "linkedList.h"
+//#include "course.h"
 
 void insertAtBeginning(Node **headRef, Student *newStudent) {
 	Node *newNode = (Node *) malloc(sizeof(Node));
@@ -67,6 +69,13 @@ void insertBeforePreviousNull(Node *node, Student *newStudent) {
     node->previous = prev;
     node->previous->next = node;
     node->next->previous = node;
+}
+
+void rewindList(Course *course, Node *last) {
+	while (course->vacancies->previous != NULL) {
+		last = course->vacancies;
+		course->vacancies = course->vacancies->previous;
+	}
 }
 
 void printList(Node *node) {

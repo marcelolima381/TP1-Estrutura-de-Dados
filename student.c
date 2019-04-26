@@ -5,8 +5,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "student.h"
+#include "datatype.h"
 #include "utils.h"
+//#include "student.h"
+//#include "utils.h"
 
 Student* setStudent() {
 	Student *student = (Student *) malloc (sizeof(Student));

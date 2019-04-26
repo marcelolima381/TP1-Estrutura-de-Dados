@@ -5,14 +5,7 @@
 #ifndef TP1_ESTRUTURA_DE_DADOS_STUDENT_H
 #define TP1_ESTRUTURA_DE_DADOS_STUDENT_H
 
-typedef struct student Student;
-struct student {
-	char *name;
-	float score;
-	int firstOption;
-	int secondOption;
-};
-
+#include "datatype.h"
 void registerStudents(int numberOfStudents, Student *students);
 Student* setStudent();
 

@@ -5,52 +5,63 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "sisu.h"
-#include "course.h"
-#include "student.h"
+#include "datatype.h"
+#include "linkedList.h"
+//#include "sisu.h"
+//#include "linkedList.h"
+//#include "course.h"
+//#include "student.h"
+
+void secondOption() {
+	printf("segunda opcao\n");
+}
 
 int checkListEmpty(int size) {
     return size == 0 ? 1 : 0;
 }
 
-void manageCourseVacancies() {
-    if (size == courses[firstOption].numberOfVacancies) {
-        if (last->student->score > score) {
-//				    TODO: implementar segunda opcao de curso
-//				    segundaOpcao();
-            printf("segunda opcao");
-        } else {
-            node = courses[firstOption].vacancies;
-            while (node != NULL) {
-                if (node->student->score < score) {
-                    insertAfterNode(node->previous, &students[i]);
-                    last->previous->next = NULL;
-//						    segundaOpcao();
-                    printf("segunda opcao");
-                    break;
-                }
-                node = node->next;
-            }
-        }
-    } else if (size < courses[firstOption].numberOfVacancies) {
-        node = courses[firstOption].vacancies;
-        while (node != NULL) {
-            if (node->student->score < score) {
-                if (node->previous != NULL) {
-                    insertBeforePreviousNull(node, &students[i]);
-                } else {
-                    insertBeforeNode(node, &students[i]);
-                }
-                courses[firstOption].vacancies = node;
-                break;
-            } else if (node->student->score > score && node->next == NULL) {
-                insertAtEnd(&courses[firstOption].vacancies, &students[i]);
-                break;
-            }
-            node = node->next;
-        }
+int courseIsFull(int size, int numberOfVacancies) {
+	return size == numberOfVacancies ? 1 : 0;
+}
+
+void insertAtFullCourse(Course *course, Node *last, Node *node, Student *student, float score) {
+	node = course->vacancies;
+	while (node != NULL) {
+		if (node->student->score < score) {
+			insertAfterNode(node->previous, student);
+			last->previous->next = NULL;
+			secondOption();
+			break;
+		}
+		node = node->next;
+	}
+}
+
+void insertAtHungryCourse(Course *course, Node *node, Student *student, float score) {
+	node = course->vacancies;
+	while (node != NULL) {
+		if (node->student->score < score) {
+			if (node->previous != NULL) {
+				insertBeforePreviousNull(node, student);
+			} else {
+				insertBeforeNode(node, student);
+			}
+			course->vacancies = node;
+			break;
+		} else if (node->student->score > score && node->next == NULL) {
+			insertAtEnd(&course->vacancies, student);
+			break;
+		}
+		node = node->next;
+	}
+}
+
+void manageCourseVacancies(Course *course, Node *last, Node *node, Student *student, int size, float score) {
+    if (courseIsFull(size, course->numberOfVacancies)) {
+		last->student->score > score ? secondOption()
+									 : insertAtFullCourse(course, last, node, student, score);
     } else {
-        printf("PROBLEMA!\n");
+    	insertAtHungryCourse(course, node, student, score);
     }
 }
 
@@ -65,27 +76,20 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 		secondOption = students[i].secondOption;
 		score = students[i].score;
 
-//		Checa primeira opcao
 		Node *node = courses[firstOption].vacancies;
 		Node *last = NULL;
 		int size = 0;
 
-//		Pega tamanho da lista de aprovados no curso
 		while (node != NULL) {
 			size++;
 			last = node;
 			node = node->next;
 		}
 
-        checkListEmpty(size) ? insertAtBeginning(&courses[firstOption].vacancies, &students[i]) : manageCourseVacancies();
+        checkListEmpty(size) ? insertAtBeginning(&courses[firstOption].vacancies, &students[i])
+							 : manageCourseVacancies(&courses[firstOption], last, node, &students[i], size, score);
 
-
-
-		while (courses[firstOption].vacancies->previous != NULL) {
-			last = courses[firstOption].vacancies;
-			courses[firstOption].vacancies = courses[firstOption].vacancies->previous;
-		}
-
+		rewindList(&courses[firstOption], last);
 	}
 
 	printList(courses[0].vacancies);

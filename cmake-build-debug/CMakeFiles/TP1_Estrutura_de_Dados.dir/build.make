@@ -43,10 +43,10 @@ RM = /snap/clion/69/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados
+CMAKE_SOURCE_DIR = "/home/marcelo/Projects/TP1 Estrutura de Dados"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TP1_Estrutura_de_Dados.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o: CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o   -c /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o   -c "/home/marcelo/Projects/TP1 Estrutura de Dados/main.c"
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/main.c > CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/marcelo/Projects/TP1 Estrutura de Dados/main.c" > CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.i
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/main.c -o CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/marcelo/Projects/TP1 Estrutura de Dados/main.c" -o CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.s
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o: CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o: ../linkedList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o   -c /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o   -c "/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c"
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.c > CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c" > CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.i
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.c -o CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c" -o CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.s
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o: CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o: ../course.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o   -c /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/course.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o   -c "/home/marcelo/Projects/TP1 Estrutura de Dados/course.c"
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/course.c > CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/marcelo/Projects/TP1 Estrutura de Dados/course.c" > CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.i
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/course.c -o CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/marcelo/Projects/TP1 Estrutura de Dados/course.c" -o CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.s
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o: CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o: ../student.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o   -c /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o   -c "/home/marcelo/Projects/TP1 Estrutura de Dados/student.c"
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.c > CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/marcelo/Projects/TP1 Estrutura de Dados/student.c" > CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.i
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.c -o CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/marcelo/Projects/TP1 Estrutura de Dados/student.c" -o CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.s
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: ../utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o   -c /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o   -c "/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c"
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/utils.c > CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c" > CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.i
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/utils.c -o CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c" -o CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.s
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o: CMakeFiles/TP1_Estrutura_de_Dados.dir/flags.make
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o: ../sisu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o   -c /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/sisu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o   -c "/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c"
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/sisu.c > CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c" > CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.i
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/sisu.c -o CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c" -o CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.s
 
 # Object files for target TP1_Estrutura_de_Dados
 TP1_Estrutura_de_Dados_OBJECTS = \
@@ -155,7 +155,7 @@ TP1_Estrutura_de_Dados: CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o
 TP1_Estrutura_de_Dados: CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o
 TP1_Estrutura_de_Dados: CMakeFiles/TP1_Estrutura_de_Dados.dir/build.make
 TP1_Estrutura_de_Dados: CMakeFiles/TP1_Estrutura_de_Dados.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable TP1_Estrutura_de_Dados"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable TP1_Estrutura_de_Dados"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP1_Estrutura_de_Dados.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/TP1_Estrutura_de_Dados.dir/clean:
 .PHONY : CMakeFiles/TP1_Estrutura_de_Dados.dir/clean
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/depend:
-	cd /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug /home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/marcelo/Projects/TP1 Estrutura de Dados" "/home/marcelo/Projects/TP1 Estrutura de Dados" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/TP1_Estrutura_de_Dados.dir/depend
 
