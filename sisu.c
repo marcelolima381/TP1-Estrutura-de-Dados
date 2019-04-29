@@ -65,11 +65,11 @@ void manageCourseVacancies(Course *course, Node *last, Node *node, Student *stud
     }
 }
 
-int getListSize(Node *node, Node *last) {
+int getListSize(Node *node, Node **last) {
     int size = 0;
     while (node != NULL) {
         size++;
-        last = node;
+        *last = node;
         node = node->next;
     }
 
@@ -88,8 +88,8 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 		score = students[i].score;
 
 		Node *node = courses[firstOption].vacancies;
-		Node *last = NULL;
-		int size = getListSize(node, last);
+		Node *last;
+		int size = getListSize(node, &last);
 
         checkListEmpty(size) ? insertAtBeginning(&courses[firstOption].vacancies, &students[i])
 							 : manageCourseVacancies(&courses[firstOption], last, node, &students[i], size, score);
