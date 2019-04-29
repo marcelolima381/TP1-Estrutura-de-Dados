@@ -21,8 +21,8 @@ int courseIsFull(int size, int numberOfVacancies) {
 	return size == numberOfVacancies ? 1 : 0;
 }
 
-void insertAtFullCourse(Course *course, Node *last, Node *node, Student *student, float score) {
-	node = course->vacancies;
+void insertAtFullCourse(Course *courses, Node *last, Node *node, Student *student, float score, int option) {
+	node = courses[option].vacancies;
 	while (node != NULL) {
 		if (node->student->score < score) {
 			insertAfterNode(node->previous, student);
@@ -35,8 +35,8 @@ void insertAtFullCourse(Course *course, Node *last, Node *node, Student *student
 	}
 }
 
-void insertAtHungryCourse(Course *course, Node *node, Student *student, float score) {
-	node = course->vacancies;
+void insertAtHungryCourse(Course *courses, Node *node, Student *student, float score, int option) {
+	node = courses[option].vacancies;
 	while (node != NULL) {
 		if (node->student->score < score) {
 			if (node->previous != NULL) {
@@ -44,24 +44,28 @@ void insertAtHungryCourse(Course *course, Node *node, Student *student, float sc
 			} else {
 				insertBeforeNode(node, student);
 			}
-			course->vacancies = node;
+			courses[option].vacancies = node;
 			break;
 		} else if (node->student->score > score && node->next == NULL) {
-			insertAtEnd(&course->vacancies, student);
+			insertAtEnd(&courses[option].vacancies, student);
 			break;
 		}
 		node = node->next;
 	}
 }
 
-void manageCourseVacancies(Course *course, Node *last, Node *node, Student *student, int size, float score) {
-    if (courseIsFull(size, course->numberOfVacancies)) {
-        Student *candidate = (Student *) malloc (sizeof(Student));
+void manageCourseVacancies(Course *courses, Node *last, Node *node, Student *student, int size, float score, int option) {
+    if (courseIsFull(size, courses[option].numberOfVacancies)) {
+        Student *candidate;
         candidate = student;
-		last->student->score > score ? secondOption(candidate)
-									 : insertAtFullCourse(course, last, node, student, score);
+		if (last->student->score > score) {
+
+            secondOption(candidate);
+		} else {
+            insertAtFullCourse(courses, last, node, student, score, option);
+        }
     } else {
-    	insertAtHungryCourse(course, node, student, score);
+    	insertAtHungryCourse(courses, node, student, score, option);
     }
 }
 
@@ -91,8 +95,11 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 		Node *last;
 		int size = getListSize(node, &last);
 
-        checkListEmpty(size) ? insertAtBeginning(&courses[firstOption].vacancies, &students[i])
-							 : manageCourseVacancies(&courses[firstOption], last, node, &students[i], size, score);
+        if (checkListEmpty(size)) {
+            insertAtBeginning(&courses[firstOption].vacancies, &students[i]);
+        } else {
+            manageCourseVacancies(courses, last, node, &students[i], size, score, firstOption);
+        }
 
 		rewindList(&courses[firstOption], last);
 	}

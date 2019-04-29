@@ -10,9 +10,9 @@
 void secondOption(Student *student);
 int checkListEmpty(int size);
 int courseIsFull(int size, int numberOfVacancies);
-void insertAtFullCourse(Course *course, Node *last, Node *node, Student *student, float score);
-void insertAtHungryCourse(Course *course, Node *node, Student *student, float score);
-void manageCourseVacancies(Course *course, Node *last, Node *node, Student *student, int size, float score);
+void insertAtFullCourse(Course *courses, Node *last, Node *node, Student *student, float score, int option);
+void insertAtHungryCourse(Course *courses, Node *node, Student *student, float score, int option);
+void manageCourseVacancies(Course *courses, Node *last, Node *node, Student *student, int size, float score, int option);
 int getListSize(Node *node, Node **last);
 void showSisuResult(Course *courses, Student *students, int numberOfStudents);
 
