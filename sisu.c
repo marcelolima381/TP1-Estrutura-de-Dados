@@ -8,8 +8,9 @@
 #include "datatype.h"
 #include "linkedList.h"
 
-void secondOption() {
+void secondOption(Student *student) {
 	printf("segunda opcao\n");
+	printf("Desclassificado da primeira opcao: %s\n", student->name);
 }
 
 int checkListEmpty(int size) {
@@ -25,8 +26,9 @@ void insertAtFullCourse(Course *course, Node *last, Node *node, Student *student
 	while (node != NULL) {
 		if (node->student->score < score) {
 			insertAfterNode(node->previous, student);
+			Student *disclassifiedStudent = last->student;
 			last->previous->next = NULL;
-			secondOption();
+			secondOption(disclassifiedStudent);
 			break;
 		}
 		node = node->next;
@@ -54,11 +56,24 @@ void insertAtHungryCourse(Course *course, Node *node, Student *student, float sc
 
 void manageCourseVacancies(Course *course, Node *last, Node *node, Student *student, int size, float score) {
     if (courseIsFull(size, course->numberOfVacancies)) {
-		last->student->score > score ? secondOption()
+        Student *candidate = (Student *) malloc (sizeof(Student));
+        candidate = student;
+		last->student->score > score ? secondOption(candidate)
 									 : insertAtFullCourse(course, last, node, student, score);
     } else {
     	insertAtHungryCourse(course, node, student, score);
     }
+}
+
+int getListSize(Node *node, Node *last) {
+    int size = 0;
+    while (node != NULL) {
+        size++;
+        last = node;
+        node = node->next;
+    }
+
+    return size;
 }
 
 void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
@@ -74,13 +89,7 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 
 		Node *node = courses[firstOption].vacancies;
 		Node *last = NULL;
-		int size = 0;
-
-		while (node != NULL) {
-			size++;
-			last = node;
-			node = node->next;
-		}
+		int size = getListSize(node, last);
 
         checkListEmpty(size) ? insertAtBeginning(&courses[firstOption].vacancies, &students[i])
 							 : manageCourseVacancies(&courses[firstOption], last, node, &students[i], size, score);
