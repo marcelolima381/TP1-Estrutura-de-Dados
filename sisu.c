@@ -14,25 +14,22 @@ void secondOption(Student *student) {
 }
 
 int checkListEmpty(int size) {
-    return size == 0 ? 1 : 0;
+	return size == 0 ? 1 : 0;
 }
 
 int courseIsFull(int size, int numberOfVacancies) {
 	return size == numberOfVacancies ? 1 : 0;
 }
 
-void insertAtFullCourse(Course *courses, Node *last, Node *node, Student *student, float score, int option) {
-	node = courses[option].vacancies;
+int getListSize(Node *node, Node **last) {
+	int size = 0;
 	while (node != NULL) {
-		if (node->student->score < score) {
-			insertAfterNode(node->previous, student);
-			Student *disclassifiedStudent = last->student;
-			last->previous->next = NULL;
-			secondOption(disclassifiedStudent);
-			break;
-		}
+		size++;
+		*last = node;
 		node = node->next;
 	}
+
+	return size;
 }
 
 void insertAtHungryCourse(Course *courses, Node *node, Student *student, float score, int option) {
@@ -54,30 +51,49 @@ void insertAtHungryCourse(Course *courses, Node *node, Student *student, float s
 	}
 }
 
-void manageCourseVacancies(Course *courses, Node *last, Node *node, Student *student, int size, float score, int option) {
-    if (courseIsFull(size, courses[option].numberOfVacancies)) {
-        Student *candidate;
-        candidate = student;
-		if (last->student->score > score) {
-
-            secondOption(candidate);
-		} else {
-            insertAtFullCourse(courses, last, node, student, score, option);
-        }
-    } else {
-    	insertAtHungryCourse(courses, node, student, score, option);
-    }
+void insertAtFullCourse(Course *courses, Node *last, Node *node, Student *student, float score, int option) {
+	node = courses[option].vacancies;
+	while (node != NULL) {
+		if (node->student->score < score) {
+			insertAfterNode(node->previous, student);
+			Student *disclassifiedStudent = last->student;
+			last->previous->next = NULL;
+			Node *lastWaitingList;
+			int size = getListSize(courses[option].waitingList, &lastWaitingList);
+			if (checkListEmpty(size)) {
+				insertAtBeginning(&courses[option].waitingList, disclassifiedStudent);
+			} else {
+				insertAtHungryCourse(courses,
+									 courses[option].waitingList,
+									 disclassifiedStudent,
+									 student->score,
+									 option);
+			}
+			secondOption(disclassifiedStudent);
+			break;
+		}
+		node = node->next;
+	}
 }
 
-int getListSize(Node *node, Node **last) {
-    int size = 0;
-    while (node != NULL) {
-        size++;
-        *last = node;
-        node = node->next;
-    }
-
-    return size;
+void manageCourseVacancies(Course *courses,
+						   Node *last,
+						   Node *node,
+						   Student *student,
+						   int size,
+						   float score,
+						   int option) {
+	if (courseIsFull(size, courses[option].numberOfVacancies)) {
+//        Student *candidate;
+//        candidate = student;
+		if (last->student->score > score && option != student->secondOption) {
+			secondOption(student);
+		} else {
+			insertAtFullCourse(courses, last, node, student, score, option);
+		}
+	} else {
+		insertAtHungryCourse(courses, node, student, score, option);
+	}
 }
 
 void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
@@ -95,11 +111,11 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 		Node *last;
 		int size = getListSize(node, &last);
 
-        if (checkListEmpty(size)) {
-            insertAtBeginning(&courses[firstOption].vacancies, &students[i]);
-        } else {
-            manageCourseVacancies(courses, last, node, &students[i], size, score, firstOption);
-        }
+		if (checkListEmpty(size)) {
+			insertAtBeginning(&courses[firstOption].vacancies, &students[i]);
+		} else {
+			manageCourseVacancies(courses, last, node, &students[i], size, score, firstOption);
+		}
 
 		rewindList(&courses[firstOption], last);
 	}

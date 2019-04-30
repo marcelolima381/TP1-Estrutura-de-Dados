@@ -13,10 +13,10 @@ int main() {
 	scanf("%i %i", &numberOfCourses, &numberOfStudents);
 	getchar();
 
-	Course *courses = (Course *) malloc (numberOfCourses * sizeof(Course));
+	Course *courses = (Course *) malloc(numberOfCourses * sizeof(Course));
 	registerCourses(numberOfCourses, courses);
 
-	Student *students = (Student *) malloc (numberOfStudents * sizeof(Student));
+	Student *students = (Student *) malloc(numberOfStudents * sizeof(Student));
 	registerStudents(numberOfStudents, students);
 
 	showSisuResult(courses, students, numberOfStudents);

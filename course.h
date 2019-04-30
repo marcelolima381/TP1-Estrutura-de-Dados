@@ -7,8 +7,8 @@
 
 #include "datatype.h"
 
-char* readDynamicString();
-char* setCourseName();
+char *readDynamicString();
+char *setCourseName();
 int setNumberOfVacancies();
 Course registerCourse();
 void registerCourses(int numberOfCourses, Course *courses);

@@ -8,17 +8,17 @@
 #include <ctype.h>
 #include "utils.h"
 
-char* readDynamicString() {
+char *readDynamicString() {
 	char *str;
 	char c;
 	int strLength = 0;
-	str = (char *) malloc (INITIAL_SIZE * sizeof(char));
+	str = (char *) malloc(INITIAL_SIZE * sizeof(char));
 
 	while ((c = getchar()) != '\n' && c != EOF) {
 		if (isalpha((unsigned char) c) || c == ' ') {
 			str[strLength] = c;
 			strLength++;
-			str = (char *) realloc (str, INITIAL_SIZE + strLength);
+			str = (char *) realloc(str, INITIAL_SIZE + strLength);
 		}
 	}
 	if (strlen(str) != strLength) {
@@ -33,5 +33,5 @@ void removeLastChar(char *str) {
 	for (i = 0; i < strlen(str); i++) {
 		printf("Caractere da string dinamica: %c\n", str[i]);
 	}
-	str[strlen(str)-1] = '\0';
+	str[strlen(str) - 1] = '\0';
 }

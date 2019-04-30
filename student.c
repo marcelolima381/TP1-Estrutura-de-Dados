@@ -8,8 +8,8 @@
 #include "datatype.h"
 #include "utils.h"
 
-Student* setStudent() {
-	Student *student = (Student *) malloc (sizeof(Student));
+Student *setStudent() {
+	Student *student = (Student *) malloc(sizeof(Student));
 	student->name = readDynamicString();
 	scanf("%f %i %i", &student->score, &student->firstOption, &student->secondOption);
 	getchar();

@@ -7,6 +7,6 @@
 
 #include "datatype.h"
 void registerStudents(int numberOfStudents, Student *students);
-Student* setStudent();
+Student *setStudent();
 
 #endif //TP1_ESTRUTURA_DE_DADOS_STUDENT_H

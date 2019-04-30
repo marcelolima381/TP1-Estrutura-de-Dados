@@ -9,7 +9,7 @@
 #include "linkedList.h"
 #include "utils.h"
 
-char* setCourseName() {
+char *setCourseName() {
 	char *name;
 
 	name = readDynamicString();
@@ -27,14 +27,14 @@ int setNumberOfVacancies() {
 }
 
 Course registerCourse() {
-	Course *course = (Course *) malloc (sizeof(Course));
+	Course *course = (Course *) malloc(sizeof(Course));
 	char *name;
 	int numberOfVacancies;
 
 	name = setCourseName();
 	numberOfVacancies = setNumberOfVacancies();
 
-	course->name = (char *) malloc ((INITIAL_SIZE + strlen(name)) * sizeof(char));
+	course->name = (char *) malloc((INITIAL_SIZE + strlen(name)) * sizeof(char));
 	strcpy(course->name, name);
 	course->numberOfVacancies = numberOfVacancies;
 	free(name);

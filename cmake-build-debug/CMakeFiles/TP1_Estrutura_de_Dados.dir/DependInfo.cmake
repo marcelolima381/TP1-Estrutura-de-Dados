@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/course.c" "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o"
-  "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/linkedList.c" "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o"
-  "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/main.c" "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o"
-  "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/sisu.c" "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o"
-  "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/student.c" "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o"
-  "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/utils.c" "/home/marcelolima/personal_projects/TP1-Estrutura-de-Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/course.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/course.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/linkedList.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/main.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/student.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o"
+  "/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c" "/home/marcelo/Projects/TP1 Estrutura de Dados/cmake-build-debug/CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
