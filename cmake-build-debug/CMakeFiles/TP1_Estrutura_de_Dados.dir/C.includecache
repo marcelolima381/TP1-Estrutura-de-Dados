@@ -6,53 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-course.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-linkedList.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
-utils.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-datatype.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.c
-stdio.h
--
-stdlib.h
--
-datatype.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
 
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
 datatype.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/main.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-datatype.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-course.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/course.h
-student.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
-sisu.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
 
 /home/marcelo/Projects/TP1 Estrutura de Dados/sisu.c
 stdio.h
@@ -65,38 +23,4 @@ datatype.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
 linkedList.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
-datatype.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-datatype.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-utils.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/student.h
-datatype.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-ctype.h
--
-utils.h
-/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
-
-/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
 
