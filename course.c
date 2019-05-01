@@ -27,7 +27,7 @@ int setNumberOfVacancies() {
 }
 
 Course registerCourse() {
-	Course *course = (Course *) malloc(sizeof(Course));
+	Course *course = (Course *) malloc (sizeof(Course));
 	char *name;
 	int numberOfVacancies;
 
