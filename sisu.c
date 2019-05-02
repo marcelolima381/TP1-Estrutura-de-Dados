@@ -30,8 +30,8 @@ int getListSize(Node *node, Node **last) {
 
 void insertAtHungryNode(Course *courses, Node **node, Student *student, int option) {
 //	node = courses[option].vacancies;
+	Node *nodeValue = *node;
 	while (*node != NULL) {
-		Node *nodeValue = *node;
 		if (nodeValue->student->score < student->score) {
 			if (nodeValue->previous != NULL) {
 				insertBeforePreviousNull(*node, student);
@@ -44,7 +44,7 @@ void insertAtHungryNode(Course *courses, Node **node, Student *student, int opti
 			insertAtEnd(node, student);
 			break;
 		}
-		*node = nodeValue->next;
+		nodeValue = nodeValue->next;
 	}
 }
 
