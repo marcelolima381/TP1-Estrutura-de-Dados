@@ -47,13 +47,13 @@ void insertAtEnd(Node **headRef, Student *newStudent) {
 	newNode->previous = last;
 }
 
-void insertBeforeNode(Node *node, Student *newStudent) {
+void insertBeforeNode(Node **node, Student *newStudent) {
 	Node *newNode = (Node *) malloc(sizeof(Node));
 	newNode->student = newStudent;
-	Node *temp = node;
-	node = newNode;
-	node->next = temp;
-	node->next->previous = node;
+	Node *temp = *node;
+	newNode->next = temp;
+	newNode->next->previous = newNode;
+	*node = newNode;
 }
 
 void insertBeforePreviousNull(Node *node, Student *newStudent) {
@@ -69,9 +69,12 @@ void insertBeforePreviousNull(Node *node, Student *newStudent) {
 	node->next->previous = node;
 }
 
-void rewindList(Course *course, Node *last) {
+void rewindList(Course *course) {
+	if (course->vacancies == NULL) {
+		return;
+	}
 	while (course->vacancies->previous != NULL) {
-		last = course->vacancies;
+//		last = course->vacancies;
 		course->vacancies = course->vacancies->previous;
 	}
 }

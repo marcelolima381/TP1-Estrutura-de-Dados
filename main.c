@@ -19,7 +19,7 @@ int main() {
 	Student *students = (Student *) malloc (numberOfStudents * sizeof(Student));
 	registerStudents(numberOfStudents, students);
 
-	showSisuResult(courses, students, numberOfStudents);
+	showSisuResult(courses, students, numberOfStudents, numberOfCourses);
 
 	return 0;
 }

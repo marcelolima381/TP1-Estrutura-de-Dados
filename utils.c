@@ -7,6 +7,9 @@
 #include <string.h>
 #include <ctype.h>
 #include "utils.h"
+#include "datatype.h"
+#include "sisu.h"
+#include "linkedList.h"
 
 char *readDynamicString() {
 	char *str;
@@ -15,11 +18,11 @@ char *readDynamicString() {
 	str = (char *) malloc(INITIAL_SIZE * sizeof(char));
 
 	while ((c = getchar()) != '\n' && c != EOF) {
-		if (isalpha((unsigned char) c) || c == ' ') {
+//		if (isalpha((unsigned char) c) || c == ' ') {
 			str[strLength] = c;
 			strLength++;
 			str = (char *) realloc(str, INITIAL_SIZE + strLength);
-		}
+//		}
 	}
 	if (strlen(str) != strLength) {
 		str[strLength] = '\0';
@@ -27,6 +30,17 @@ char *readDynamicString() {
 
 	return str;
 }
+void secondOption(Course* courses, Node **node, Student *student) {
+	Node *last;
+	int size = getListSize(*node, &last);
+
+	if (checkListEmpty(size)) {
+		insertAtBeginning(&courses[student->secondOption].vacancies, student);
+	} else {
+		manageCourseVacancies(courses, last, *node, student, size, student->secondOption);
+	}
+}
+
 
 void removeLastChar(char *str) {
 	int i = 0;

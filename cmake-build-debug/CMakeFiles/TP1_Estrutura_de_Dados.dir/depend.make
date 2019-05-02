@@ -19,11 +19,15 @@ CMakeFiles/TP1_Estrutura_de_Dados.dir/main.c.o: ../student.h
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o: ../datatype.h
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o: ../linkedList.h
 CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o: ../sisu.c
+CMakeFiles/TP1_Estrutura_de_Dados.dir/sisu.c.o: ../utils.h
 
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o: ../datatype.h
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o: ../student.c
 CMakeFiles/TP1_Estrutura_de_Dados.dir/student.c.o: ../utils.h
 
+CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: ../datatype.h
+CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: ../linkedList.h
+CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: ../sisu.h
 CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: ../utils.c
 CMakeFiles/TP1_Estrutura_de_Dados.dir/utils.c.o: ../utils.h
 

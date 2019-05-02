@@ -7,10 +7,7 @@
 #include <string.h>
 #include "datatype.h"
 #include "linkedList.h"
-
-void secondOption(Course* courses, Node **node, Student *student) {
-	insertAtBeginning(node, student);
-}
+#include "utils.h"
 
 int checkListEmpty(int size) {
 	return size == 0 ? 1 : 0;
@@ -31,22 +28,23 @@ int getListSize(Node *node, Node **last) {
 	return size;
 }
 
-void insertAtHungryCourse(Course *courses, Node *node, Student *student, int option) {
+void insertAtHungryNode(Course *courses, Node **node, Student *student, int option) {
 //	node = courses[option].vacancies;
-	while (node != NULL) {
-		if (node->student->score < student->score) {
-			if (node->previous != NULL) {
-				insertBeforePreviousNull(node, student);
+	while (*node != NULL) {
+		Node *nodeValue = *node;
+		if (nodeValue->student->score < student->score) {
+			if (nodeValue->previous != NULL) {
+				insertBeforePreviousNull(*node, student);
 			} else {
 				insertBeforeNode(node, student);
 			}
-			courses[option].vacancies = node;
+//			courses[option].vacancies = node;
 			break;
-		} else if (node->student->score > student->score && node->next == NULL) {
-			insertAtEnd(&courses[option].vacancies, student);
+		} else if (nodeValue->student->score >= student->score && nodeValue->next == NULL) {
+			insertAtEnd(node, student);
 			break;
 		}
-		node = node->next;
+		*node = nodeValue->next;
 	}
 }
 
@@ -56,18 +54,22 @@ void insertAtWaitingList(Course *courses, Student *student, int option) {
 	if (checkListEmpty(size)) {
 		insertAtBeginning(&courses[option].waitingList, student);
 	} else {
-		insertAtHungryCourse(courses,
-							 courses[option].waitingList,
-							 student,
-							 option);
+		insertAtHungryNode(courses,
+						   &courses[option].waitingList,
+						   student,
+						   option);
 	}
 }
 
-void insertAtFullCourse(Course *courses, Node *last, Node *node, Student *student, int option) {
+void insertAtFullNode(Course *courses, Node *last, Node *node, Student *student, int option) {
 //	node = courses[option].vacancies;
 	while (node != NULL) {
 		if (node->student->score < student->score) {
-			insertAfterNode(node->previous, student);
+			if (node->previous == NULL) {
+				insertAtBeginning(&node, student);
+			} else {
+				insertAfterNode(node->previous, student);
+			}
 			Student *disclassifiedStudent = last->student;
 			last->previous->next = NULL;
 //
@@ -88,26 +90,30 @@ void manageCourseVacancies(Course *courses,
 						   int size,
 						   int option) {
 	if (courseIsFull(size, courses[option].numberOfVacancies)) {
-		if (last->student->score > student->score && option != student->secondOption) {
+		if (last->student->score >= student->score && option != student->secondOption) {
 			insertAtWaitingList(courses, student, option);
-//			secondOption(student);
-			printf("LALALALALLALALALALLALALALALALALALLALALALALLALALALALALALALLALALALALLALALALALALALALLALALALALLALALA\n");
+			secondOption(courses, &courses[student->secondOption].vacancies, student);
+		} else if(last->student->score >= student->score && option == student->secondOption) {
+			insertAtWaitingList(courses, student, option);
 		} else {
-			insertAtFullCourse(courses, last, node, student, option);
+			insertAtFullNode(courses, last, node, student, option);
 		}
 	} else {
-		insertAtHungryCourse(courses, node, student, option);
+		insertAtHungryNode(courses, &node, student, option);
 	}
 }
 
-void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
+void showSisuResult(Course *courses, Student *students, int numberOfStudents, int numberOfCourses) {
 	int i;
 	int firstOption;
 	int secondOption;
 
 	for (i = 0; i < numberOfStudents; i++) {
+//		printf("P DE DOUG é igual a %i\n", i);
 		firstOption = students[i].firstOption;
 		secondOption = students[i].secondOption;
+
+//		printf("%s %.2f\n", students[i].name, students[i].score);
 
 		Node *node = courses[firstOption].vacancies;
 		Node *last;
@@ -119,16 +125,52 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents) {
 			manageCourseVacancies(courses, last, node, &students[i], size, firstOption);
 		}
 
-		rewindList(&courses[firstOption], last);
+		rewindList(&courses[firstOption]);
+		rewindList(&courses[secondOption]);
 	}
-	printf("Curso: %s\n", courses[0].name);
-	printList(courses[0].vacancies);
-	printf("----------------------\n");
+
+	/*printList(courses[0].vacancies);
+	printf("___________________________________\n");
 	printList(courses[0].waitingList);
-	printf("**********************\n");
-	printf("**********************\n");
-	printf("Curso: %s\n", courses[1].name);
+	printf("***\n");
 	printList(courses[1].vacancies);
-	printf("----------------------\n");
+	printf("___________________________________\n");
 	printList(courses[1].waitingList);
+	printf("---\n");
+	printf("---\n");
+	printf("---\n");*/
+
+
+	Node *last = (Node *) malloc (sizeof(Node));
+	for (i = 0; i < numberOfCourses; i++) {
+		Node *walker = courses[i].vacancies;
+		if (walker == NULL) {
+			printf("%s %.2f\n", courses[i].name, 0.00);
+			printf("Classificados\n");
+			printf("Lista de espera\n");
+		} else {
+			while (walker != NULL) {
+				last = walker;
+				walker = walker->next;
+			}
+			walker = courses[i].vacancies;
+			printf("%s %.2f\n", courses[i].name, last->student->score);
+			printf("Classificados\n");
+			if (walker != NULL) {
+				while (walker != NULL) {
+					printf("%s %.2f\n", walker->student->name, walker->student->score);
+					walker = walker->next;
+				}
+			}
+			walker = courses[i].waitingList;
+			printf("Lista de espera\n");
+			if (walker != NULL) {
+				while (walker != NULL) {
+					printf("%s %.2f\n", walker->student->name, walker->student->score);
+					walker = walker->next;
+				}
+			}
+		}
+		printf("\n");
+	}
 }
