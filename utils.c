@@ -18,11 +18,9 @@ char *readDynamicString() {
 	str = (char *) malloc(INITIAL_SIZE * sizeof(char));
 
 	while ((c = getchar()) != '\n' && c != EOF) {
-//		if (isalpha((unsigned char) c) || c == ' ') {
 			str[strLength] = c;
 			strLength++;
 			str = (char *) realloc(str, INITIAL_SIZE + strLength);
-//		}
 	}
 	if (strlen(str) != strLength) {
 		str[strLength] = '\0';

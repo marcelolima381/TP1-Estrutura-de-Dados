@@ -26,6 +26,28 @@ linkedList.h
 utils.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
 
+/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
+datatype.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
+
+/home/marcelo/Projects/TP1 Estrutura de Dados/utils.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+utils.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
+datatype.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h
+sisu.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/sisu.h
+linkedList.h
+/home/marcelo/Projects/TP1 Estrutura de Dados/linkedList.h
+
 /home/marcelo/Projects/TP1 Estrutura de Dados/utils.h
 datatype.h
 /home/marcelo/Projects/TP1 Estrutura de Dados/datatype.h

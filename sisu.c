@@ -29,7 +29,6 @@ int getListSize(Node *node, Node **last) {
 }
 
 void insertAtHungryNode(Course *courses, Node **node, Student *student, int option) {
-//	node = courses[option].vacancies;
 	Node *nodeValue = *node;
 	while (*node != NULL) {
 		if (nodeValue->student->score < student->score) {
@@ -38,7 +37,6 @@ void insertAtHungryNode(Course *courses, Node **node, Student *student, int opti
 			} else {
 				insertBeforeNode(node, student);
 			}
-//			courses[option].vacancies = node;
 			break;
 		} else if (nodeValue->student->score >= student->score && nodeValue->next == NULL) {
 			insertAtEnd(node, student);
@@ -62,7 +60,6 @@ void insertAtWaitingList(Course *courses, Student *student, int option) {
 }
 
 void insertAtFullNode(Course *courses, Node *last, Node *node, Student *student, int option) {
-//	node = courses[option].vacancies;
 	while (node != NULL) {
 		if (node->student->score < student->score) {
 			if (node->previous == NULL) {
@@ -72,7 +69,6 @@ void insertAtFullNode(Course *courses, Node *last, Node *node, Student *student,
 			}
 			Student *disclassifiedStudent = last->student;
 			last->previous->next = NULL;
-//
 			insertAtWaitingList(courses, disclassifiedStudent, option);
 			if (option != disclassifiedStudent->secondOption) {
 				secondOption(courses, &courses[disclassifiedStudent->secondOption].vacancies, disclassifiedStudent);
@@ -109,11 +105,9 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents, in
 	int secondOption;
 
 	for (i = 0; i < numberOfStudents; i++) {
-//		printf("P DE DOUG é igual a %i\n", i);
 		firstOption = students[i].firstOption;
 		secondOption = students[i].secondOption;
 
-//		printf("%s %.2f\n", students[i].name, students[i].score);
 
 		Node *node = courses[firstOption].vacancies;
 		Node *last;
@@ -128,18 +122,6 @@ void showSisuResult(Course *courses, Student *students, int numberOfStudents, in
 		rewindList(&courses[firstOption]);
 		rewindList(&courses[secondOption]);
 	}
-
-	/*printList(courses[0].vacancies);
-	printf("___________________________________\n");
-	printList(courses[0].waitingList);
-	printf("***\n");
-	printList(courses[1].vacancies);
-	printf("___________________________________\n");
-	printList(courses[1].waitingList);
-	printf("---\n");
-	printf("---\n");
-	printf("---\n");*/
-
 
 	Node *last = (Node *) malloc (sizeof(Node));
 	for (i = 0; i < numberOfCourses; i++) {
